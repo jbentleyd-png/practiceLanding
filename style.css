@@ -1,4 +1,27 @@
-.highly-dope {
-  font-weight: bold;
+body {
+  font-family: "Roboto", sans-serif;
 }
-/*just putting something in here*
+
+.header {
+  display: flex;
+  background-color: #1f2937;
+  color: white;
+}
+
+.call {
+  background-color: #1f2937;
+  color: white;
+}
+
+.testimonial {
+  background-color: #e5e7eb;
+}
+
+.call2 {
+  background-color: #3882f6; /*this is probably for the blue box, actually.*/
+}
+
+.footer {
+  background-color: #1f2937;
+  color: white;
+}
