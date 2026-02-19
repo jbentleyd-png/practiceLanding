@@ -1,16 +1,81 @@
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0; /*let stuff stretch to the edges*/
+}
+
+.upper {
+  background-color: #1f2937;
+  padding: 0 150px;
+  color: white;
 }
 
 .header {
   display: flex;
-  background-color: #1f2937;
-  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h4 {
+  font-size: larger;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin: auto 5px; /*this auto is actually lining it up vertically with the Header Logo (maybe?), which is cool*/
+}
+
+a {
+  text-decoration: none;
+  /* this is a cool option, but we won't use it this time.color: inherit; */
+  color: rgb(182, 173, 173);
 }
 
 .call {
-  background-color: #1f2937;
+  display: flex;
+  padding: 50px 0 100px;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline-end: 15%;
+}
+
+.call-left {
+  flex-shrink: 1;
+  min-width: 300px;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+.subtext {
+  color: rgb(182, 173, 173);
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.top-button {
+  background-color: #3882f6;
+  border-radius: 7px;
   color: white;
+  padding: 4px 15px;
+  border: none;
+}
+
+/*this is apparently a pseudo-class, which we can use to make our button change colors when pressed (an ability we lost when we removed the border)*/
+.top-button:active {
+  background-color: #225abb;
+}
+
+.call-image {
+  width: 400px;
+  height: auto;
+  margin-left: 25px;
+  flex-shrink: 1;
 }
 
 .testimonial {
