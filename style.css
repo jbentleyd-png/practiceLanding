@@ -147,7 +147,41 @@ h2 {
 
 .blue-box {
   background-color: #3882f6;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  gap: 250px;
+  align-items: center;
+  padding: 15px;
 }
+
+.call2main {
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  margin-bottom: 0;
+}
+
+.call2sub {
+  color: rgb(233, 233, 233);
+  font-size: medium;
+  margin-top: 3px;
+}
+
+.blue-box button {
+  background-color: inherit;
+  border-radius: 7px;
+  color: white;
+  padding: 4px 15px;
+  border: 2px solid white; /* based on inheritance, we need to specify all three of these values to have teh border render at all, apparently*/
+}
+
+.blue-box button:active {
+  background-color: white;
+  color: #3882f6; /*invert when clicked*/
+}
+
+/*FOOTER*/
 
 .footer {
   background-color: #1f2937;
