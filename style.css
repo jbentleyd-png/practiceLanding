@@ -9,6 +9,8 @@ body {
   color: white;
 }
 
+/*HEADER*/
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -33,6 +35,8 @@ a {
   /* this is a cool option, but we won't use it this time.color: inherit; */
   color: rgb(182, 173, 173);
 }
+
+/*CALL to action section*/
 
 .call {
   display: flex;
@@ -65,7 +69,6 @@ h1 {
   padding: 4px 15px;
   border: none;
 }
-
 /*this is apparently a pseudo-class, which we can use to make our button change colors when pressed (an ability we lost when we removed the border)*/
 .top-button:active {
   background-color: #225abb;
@@ -78,9 +81,43 @@ h1 {
   flex-shrink: 1;
 }
 
+/*CAROUSEL section*/
+h2 {
+  text-align: center;
+  margin: 35px;
+}
+
+.carousel-section {
+  padding: 0 150px 30px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.imagebox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.imagebox img {
+  /*descendant selector BABYYYYY*/
+  width: 250px;
+  margin-bottom: 25px;
+  border-radius: 20px;
+}
+
+/*TESTIMONIAL*/
+
 .testimonial {
   background-color: #e5e7eb;
 }
+
+/*CALL to action TWO section*/
 
 .call2 {
   background-color: #3882f6; /*this is probably for the blue box, actually.*/
