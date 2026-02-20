@@ -143,18 +143,21 @@ h2 {
 
 .call2 {
   background-color: white;
-  padding: 100px 25vw;
+  padding: 100px 27vw;
 }
 
 .blue-box {
   background-color: #3882f6;
   border-radius: 7px;
   display: flex;
-  justify-content: center;
-  gap: 250px;
+  justify-content: space-around;
   align-items: center;
   padding: 15px;
-  height: 100px;
+  gap: 15px;
+}
+
+.blue-box-left {
+  margin-left: 15px;
 }
 
 .call2main {
@@ -176,6 +179,7 @@ h2 {
   color: white;
   padding: 4px 15px;
   border: 2px solid white; /* based on inheritance, we need to specify all three of these values to have teh border render at all, apparently*/
+  margin-right: 15px;
 }
 
 .blue-box button:active {
